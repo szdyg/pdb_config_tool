@@ -258,9 +258,9 @@ void CPdbConfigDlg::InitPdbServerTxt()
     {
 
         pdb_text_write.open("pdb_config.txt", std::fstream::app);
-        pdb_text_write << "http://msdl.szdyg.icu/download/symbols" << std::endl;
+        pdb_text_write << "http://msdl.szdyg.cn/download/symbols" << std::endl;
         pdb_text_write << "http://msdl.microsoft.com/download/symbols" << std::endl;
-        _pdb_server.AddString(L"http://msdl.szdyg.icu/download/symbols");
+        _pdb_server.AddString(L"http://msdl.szdyg.cn/download/symbols");
         _pdb_server.AddString(L"http://msdl.microsoft.com/download/symbols");
         _pdb_server.SetCurSel(_pdb_server.GetCount() - 1);
     }
